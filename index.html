@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI EMPIRE | Flagship Ecosystem</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <div class="bg-gradient"></div>
+    <div id="primal-core-container"></div>
+
+    <!-- Navigation Rail -->
+    <nav class="nav-rail">
+        <a href="#" class="nav-item active" data-screen="landing">
+            <span class="icon">⬡</span>
+            <span class="label">CORE</span>
+        </a>
+        <a href="#" class="nav-item" data-screen="auth">
+            <span class="icon">⚿</span>
+            <span class="label">AUTH</span>
+        </a>
+        <a href="#" class="nav-item" data-screen="dashboard">
+            <span class="icon">◰</span>
+            <span class="label">OS</span>
+        </a>
+        <a href="#" class="nav-item" data-screen="store">
+            <span class="icon">⛃</span>
+            <span class="label">STORE</span>
+        </a>
+        <div class="theme-toggle-container">
+            <button id="theme-toggle" class="theme-btn">
+                <span>LIGHT_MODE</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Landing Screen -->
+    <main id="landing" class="screen active">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="syne">AI EMPIRE</h1>
+                <p class="subtitle">The Future of Digital Sovereignty</p>
+                <div class="hero-actions">
+                    <button class="btn-primary" onclick="document.querySelector('[data-screen=auth]').click()">INITIALIZE_SESSION</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="bento-grid">
+            <div class="glass-card bento-item span-6">
+                <div class="card-header">
+                    <span class="tag">SYSTEM_STATUS</span>
+                    <h3>PRIMAL_CORE_ACTIVE</h3>
+                </div>
+                <p>Real-time neural processing at 98.4% efficiency. All nodes synchronized across the global mesh.</p>
+            </div>
+            <div class="glass-card bento-item span-3">
+                <div class="card-header">
+                    <span class="tag">WEB_ARCH</span>
+                </div>
+                <h3>NEXT-GEN_UI</h3>
+                <p>3D-immersive interfaces built for the spatial web.</p>
+            </div>
+            <div class="glass-card bento-item span-3">
+                <div class="card-header">
+                    <span class="tag">AI_INTEGRATION</span>
+                </div>
+                <h3>NEURAL_SYNC</h3>
+                <p>Seamless LLM integration for enterprise workflows.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Placeholder for other screens -->
+    <!-- Auth Portal Screen -->
+    <main id="auth" class="screen">
+        <section class="auth-container">
+            <div class="glass-card auth-card">
+                <div class="auth-header">
+                    <span class="tag">SECURITY_TERMINAL</span>
+                    <h2 class="syne">IDENTITY_VERIFICATION</h2>
+                    <p>Access the Empire's neural network.</p>
+                </div>
+                <form class="auth-form">
+                    <div class="input-group">
+                        <label>USER_ID</label>
+                        <input type="text" placeholder="Enter identification...">
+                    </div>
+                    <div class="input-group">
+                        <label>ACCESS_KEY</label>
+                        <input type="password" placeholder="••••••••">
+                    </div>
+                    <button type="button" class="btn-primary full-width" onclick="document.querySelector('[data-screen=dashboard]').click()">AUTHORIZE_ACCESS</button>
+                </form>
+                <div class="auth-footer">
+                    <p>New operative? <a href="#">REQUEST_CLEARANCE</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- User Dashboard Screen -->
+    <main id="dashboard" class="screen">
+        <header class="screen-header">
+            <div class="header-left">
+                <span class="tag">OPERATIVE_DASHBOARD</span>
+                <h2 class="syne">SYSTEM_OVERVIEW</h2>
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <span class="user-name">OPERATIVE_01</span>
+                    <div class="user-avatar"></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="bento-grid">
+            <div class="glass-card bento-item span-4">
+                <div class="card-header">
+                    <span class="tag">NEURAL_LOAD</span>
+                    <h3>74.2%</h3>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 74.2%"></div>
+                </div>
+                <p class="small">Processing 1.2M tokens/sec</p>
+            </div>
+            <div class="glass-card bento-item span-4">
+                <div class="card-header">
+                    <span class="tag">ACTIVE_NODES</span>
+                    <h3>1,402</h3>
+                </div>
+                <p class="small">Distributed across 12 regions</p>
+            </div>
+            <div class="glass-card bento-item span-4">
+                <div class="card-header">
+                    <span class="tag">SECURITY_LEVEL</span>
+                    <h3>OMEGA</h3>
+                </div>
+                <p class="small">Full clearance granted</p>
+            </div>
+            
+            <div class="glass-card bento-item span-8">
+                <div class="card-header">
+                    <span class="tag">WEB_ARCHITECTURE</span>
+                    <h3>PROJECT_NEBULA</h3>
+                </div>
+                <div class="project-preview">
+                    <div class="preview-line"></div>
+                    <div class="preview-line"></div>
+                    <div class="preview-line"></div>
+                </div>
+                <button class="btn-primary">OPEN_EDITOR</button>
+            </div>
+            
+            <div class="glass-card bento-item span-4">
+                <div class="card-header">
+                    <span class="tag">AI_INTEGRATION</span>
+                    <h3>MODEL_SYNC</h3>
+                </div>
+                <ul class="service-list">
+                    <li><span>GPT-4_TURBO</span> <span class="status-dot online"></span></li>
+                    <li><span>CLAUDE_3_OPUS</span> <span class="status-dot online"></span></li>
+                    <li><span>GEMINI_PRO</span> <span class="status-dot offline"></span></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <!-- Asset Store Screen -->
+    <main id="store" class="screen">
+        <header class="screen-header">
+            <div class="header-left">
+                <span class="tag">DIGITAL_ASSETS</span>
+                <h2 class="syne">RESOURCE_HUB</h2>
+            </div>
+        </header>
+
+        <div class="store-grid">
+            <div class="glass-card store-card">
+                <div class="card-3d-content">
+                    <div class="asset-preview b-roll"></div>
+                    <div class="asset-info">
+                        <span class="tag">B-ROLL</span>
+                        <h3>CYBER_CITY_V1</h3>
+                        <p>4K Cinematic Drone Shots</p>
+                        <div class="price">2.4 ETH</div>
+                        <button class="btn-primary small-btn">ACQUIRE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-card store-card">
+                <div class="card-3d-content">
+                    <div class="asset-preview images"></div>
+                    <div class="asset-info">
+                        <span class="tag">IMAGES</span>
+                        <h3>NEURAL_LANDSCAPES</h3>
+                        <p>AI-Generated Environments</p>
+                        <div class="price">0.8 ETH</div>
+                        <button class="btn-primary small-btn">ACQUIRE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-card store-card">
+                <div class="card-3d-content">
+                    <div class="asset-preview audio"></div>
+                    <div class="asset-info">
+                        <span class="tag">AUDIO</span>
+                        <h3>SYNTH_WAVE_PACK</h3>
+                        <p>Futuristic Soundscapes</p>
+                        <div class="price">1.2 ETH</div>
+                        <button class="btn-primary small-btn">ACQUIRE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
